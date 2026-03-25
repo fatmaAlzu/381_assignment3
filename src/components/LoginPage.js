@@ -1,15 +1,15 @@
 import Header from "./Header";
-import MainSection from "./MainSection";
 import Footer from "./Footer";
+import LoginForm from "./LoginForm";
 
-function Homepage() {
+function LoginPage() {
   return (
     <div>
       <Header />
-      <MainSection />
+      <LoginForm />
       <Footer />
     </div>
   );
 }
 
-export default Homepage;
+export default LoginPage;
