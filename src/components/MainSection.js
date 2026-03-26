@@ -6,12 +6,10 @@ function MainSection() {
   const [featuredFlavors, setFeaturedFlavors] = useState([]);
   const [reviews, setReviews] = useState([]);
 
-  // Get random items
   const getRandomItems = (arr, num) => {
     return [...arr].sort(() => 0.5 - Math.random()).slice(0, num);
   };
 
-  // useEffect for reviews (required)
   useEffect(() => {
     setFeaturedFlavors(getRandomItems(flavorsData, 3));
     setReviews(getRandomItems(reviewsData, 2));
